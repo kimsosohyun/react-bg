@@ -1,0 +1,327 @@
+@-webkit-keyframes scale{
+  0%{
+    -webkit-transform:scale(1);
+
+
+  }
+  50%{
+    -webkit-transform:scale(0.9);
+  }
+  100%{
+    -webkit-transform:scale(0.8);
+
+
+  }
+}
+@-webkit-keyframes shake{
+  0%{
+
+    -webkit-transform:rotate(0deg);
+  }
+  20%{
+
+    -webkit-transform:rotate(30deg);
+  }
+  40%{
+
+    -webkit-transform:rotate(-30deg);
+  }
+  60%{
+
+    -webkit-transform:rotate(16deg);
+  }
+  80%{
+
+    -webkit-transform:rotate(-16deg);
+  }
+  100%{
+    -webkit-transform:rotate(0deg);
+  }
+}
+.input_file{
+
+    width: 100%;
+    display: block;
+    height: 40px;
+
+
+    background: white;
+    box-sizing: border-box;
+    input{
+      display: none;
+    }
+    span{
+      font-size: 18px;
+      line-height: 40px;
+      text-align:center;
+      display: block;
+      background: #ddd;
+      color:#666;
+    }
+
+
+}
+.head_img{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.am-tab-bar{
+  position: fixed;//固定定位
+  bottom: 0;
+  width: 100%;
+  height: inherit;//包裹内容，和内容一样高
+}
+.title{
+  position: fixed;//固定定位
+  top: 0;
+  width: 100%;
+  z-index: 10;
+
+}
+.am-result-pic{
+  img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+}
+.am-card-header-content{
+  img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+}
+#chat-page{
+  //height: 100vh;
+  //position: relative;
+}
+#chat-page .am-list-item{
+  border-radius: 4%;
+  margin-bottom: 2px;
+  background: rgba(255,193,193,0.5);
+  img{
+    width: 30px;
+    height: 30px;
+  }
+}
+#chat-page .chat-me .am-list-extra {
+  flex-basis: auto;
+  /* 宽 度 包 裹 内 容 */
+}
+#chat-page .chat-me .am-list-content {
+  padding-right: 34px;
+  text-align: right;
+}
+//有的时候怎么写样式都不管用，就给它的父级加id,然后通过id来找（提升选择器的优先级）。
+#chat-page .chat-me{
+
+  background: rgba(0,205,102,0.3);
+
+  .am-list-thumb img{
+    position: absolute;
+    right: 10px;
+    top: calc(50% - 32px);
+  }
+}
+.chat-footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height:inherit;
+ input{
+   width: 70%;
+   height: 40px;
+   float: left;
+   display: block;
+   padding: 0;
+   margin:0;
+   font-size: 16px;
+   text-indent: 10px;
+   border: 2px solid black;
+ }
+  span{
+    display: block;
+    float: left;
+    width: 10%;
+    height: 40px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+    background: #ddd;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+  }
+  button{
+
+    float: left;
+    padding: 0;
+    margin: 0;
+    width: 18.4%;
+    height: 44px;
+    font-size: 16px;
+    color: deeppink;
+    font-weight:bold;
+    display: block;
+    background: #ddd;
+
+    letter-spacing: 2px;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+
+  }
+
+}
+.message_item{
+
+  img{
+    width: 50px;
+    height: 50px;
+  }
+}
+.pic_list{
+  padding:0;
+  margin: 0;
+  margin-top: 10px;
+  width: 100vw;
+  list-style: none;
+  li{
+    width: 100%/3;
+    float: left;
+    margin-bottom: 8px;
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(0,0,0,.8), inset 0 0 5px rgba(0,0,0,.4);
+    border: 1px solid rgb(0,0,0);
+    box-sizing: border-box;
+    img{
+      width: 100%;
+
+    }
+    div{
+      text-align: center;
+      color: red;
+    }
+
+  }
+}
+.pic_list::after{
+  clear: both;
+  display: block;
+  content: '';
+}
+
+#like .pic_list{
+  li{
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+}
+//.like_btn{
+//  width: 30%;
+//  float: left;
+//  margin-left: 10%;
+//  transform-origin: center;
+//  -webkit-animation: 5s shake infinite alternate;
+//  img{
+//    margin-top: 60%;
+//    width: 100%;
+//  }
+//
+//}
+//.dislike_btn{
+//  -webkit-animation: 3s scale infinite alternate;
+//  width: 30%;
+//  margin-right:10%;
+//  float: right;
+//  img{
+//    margin-top: 30%;
+//    width: 100%;
+//  }
+//}
+
+.pic_span{
+  width: 100%;
+  font-size: 18px;
+  height: 100px;
+  line-height: 100px;
+  font-style: italic;
+  text-align: center;
+  display: block;
+  background: #eee;
+  border: 1px dashed black;
+  box-sizing: border-box;
+  margin-top: 10px;
+
+}
+.card{
+  margin-bottom: 20px;
+  padding: 8px;
+  width: 100%;
+  border: 2px solid black;
+  box-sizing: border-box;
+  position: relative;
+  border-radius: 20px;
+  span{
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    padding: 2px;
+    background: #eee;
+    border: 2px solid pink;
+    border-radius: 50%;
+  }
+  .photo{
+    -webkit-animation: 3s scale infinite alternate;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  .chat{
+    -webkit-animation: 5s shake infinite alternate;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
+  div{
+    width: 100%;
+    height: 60px;
+    border-bottom: 2px solid #ccc;
+    text-indent: 10px;
+    font-size: 20px;
+    border-radius: 20px;
+    img{
+      float: left;
+      width: 50px;
+      height: 50px;
+      margin: 5px;
+      border-radius: 50%;
+    }
+  }
+  strong{
+    margin-left: 2px;
+    height: 60px;
+    display: block;
+    float: left;
+    line-height: 60px;
+  }
+  ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li{
+      width: 80%;
+      line-height: 30px;
+      text-indent: 6px;
+      font-size: 16px;
+      margin-bottom: 4px;
+    }
+  }
+}
+
+
